@@ -1,0 +1,76 @@
+{
+    "display": {
+        "separator": " "
+    },
+    "modules": [
+	{
+            "type": "title",
+            "key": "╭─ ",
+            "keyColor": "white"
+        },
+        {
+            "type": "os",
+            "key": "├─ ",
+            "keyColor": "white"
+        },
+        {
+            "type": "kernel",
+            "key": "├─ ",
+            "format": "{1} {2}",
+            "keyColor": "white"
+        },
+        {
+            "type": "shell",
+            "key": "╰─ ",
+            "keyColor": "white"
+        },
+
+        "break",
+        {
+            "type": "wm",
+            "key": "╭─ ",
+            "keyColor": "white"
+        },
+        {
+            "type": "terminal",
+            "key": "├─ ",
+            "keyColor": "white"
+        },
+        {
+            "type": "terminalfont",
+            "key": "├─ ",
+            "keyColor": "white"
+        },
+        {
+            "type": "lm",
+            "key": "╰─󰧨 ",
+            "keyColor": "white"
+        },
+
+
+
+        "break",
+
+        {
+            "type": "cpu",
+            "key": "╭─󰻠",
+            "keyColor": "white"
+        },
+        {
+            "type": "gpu",
+            "key": "├─󰍛",
+            "keyColor": "white"
+        },
+
+        {
+            "type": "uptime",
+            "key": "╰─󰅐",
+            "keyColor": "white"
+        },
+	
+	"break",
+	{
+	    "type": "colors"
+	}
+    ]
+}

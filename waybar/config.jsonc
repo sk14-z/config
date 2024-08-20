@@ -1,0 +1,72 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 38,
+  "spacing": 4,
+  "exclusive": true,
+  "gtk-layer-shell": true,
+  "passthrough": false,
+  "fixed-center": true,
+  "modules-left": ["hyprland/workspaces", "hyprland/window"],
+  "modules-center": ["custom/media"],
+  "modules-right": [
+    "pulseaudio",
+    "backlight",
+    "battery",
+    // "clock",
+    "clock#simpleclock",
+    "tray",
+    "custom/power",
+  ],
+  "hyprland/workspaces": {
+    "on-click": "activate",
+    "format": "{name}",
+    "all-outputs": true,
+    "disable-scroll": false,
+    "active-only": false,
+  },
+  "tray": {
+    "show-passive-items": true,
+    "spacing": 10,
+  },
+  "battery": {
+    "format": "   {capacity}%",
+    "format-charging": "  {capacity}%",
+  }, 
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{icon}  {percent}%",
+    "format-icons": ["", ""]
+  },
+  "clock#simpleclock": {
+    "tooltip": false,
+    "format": "   {:%H:%M}",
+  },
+  "clock": {
+    "format": "  {:L%a %d %b}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+  },
+  "pulseaudio": {
+    "format": " {volume}%",
+    "format-muted": "  muted",
+  },
+  "custom/logo": {
+    "format": "",
+    "tooltip": false,
+  },
+  "custom/media": {
+        "format": "{icon} {}",
+        "return-type": "json",
+        "max-length": 40,
+        "format-icons": {
+            "spotify": "  ",
+        },
+        "escape": true,
+        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
+        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    },
+    "custom/power": {
+        "format" : "⏻ ",
+	"on-click" : "loginctl kill-session $XDG_SESSION_ID"
+    }
+}

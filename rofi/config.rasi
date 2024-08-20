@@ -1,0 +1,37 @@
+/**
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Github : @adi1090x
+ * 
+ * Configuration For Rofi Version: 1.7.3
+ **/
+
+@theme "theme.rasi"
+
+configuration {
+	/*---------- General setting ----------*/
+	modi: "drun,run,window";
+	case-sensitive: false;
+	cycle: true;
+	filter: "";
+	scroll-method: 0;
+	normalize-match: true;
+	show-icons: true;
+	icon-theme: "Papirus";
+	steal-focus: false;
+
+	/*---------- Matching setting ----------*/
+	matching: "normal";
+	tokenize: true;
+
+	/*---------- History and Sorting ----------*/
+	disable-history: false;
+	sorting-method: "normal";
+
+	/*---------- Keybindings ----------*/
+	kb-remove-char-back: "BackSpace";
+	kb-mode-complete: "";
+	kb-mode-next: "Control+l";
+	kb-mode-previous: "Control+h";
+	kb-mode-complete: "";
+}
