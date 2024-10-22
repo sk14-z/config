@@ -2,7 +2,11 @@
 
 ## Showcase
 
-[Video](https://github.com/sk14-z/config/raw/main/showcase.mov)
+![](img/24Oct22_11h52m43s.png)
+![](img/24Oct22_11h54m06s.png)
+![](img/24Oct22_11h58m16s.png)
+![](img/24Oct22_11h07m48s.png)
+![](img/24Oct22_11h41m49s.png)
 
 ## Programs
 
