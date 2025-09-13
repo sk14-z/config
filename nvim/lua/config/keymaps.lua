@@ -9,10 +9,22 @@ map("i", "<C-k>", "<up>")
 map("i", "<C-l>", "<Right>")
 map("i", "<C-;>", "<esc>")
 
-map("n", "<tab>", "<cmd>bnext<cr>")
-map("n", "<S-tab>", "<cmd>bprevious<cr>")
-map("n", "<leader>z", LazyVim.ui.bufremove)
+map("n", "<tab>", "<cmd>BufferLineCycleNext<cr>")
+map("n", "<S-tab>", "<cmd>BufferLineCyclePrev<cr>")
+map("n", "<leader>z", function()
+  Snacks.bufdelete()
+end)
 
 map("n", "<leader>m", "<cmd>Vivify<cr>")
 
+map("n", "<C-/>", "<cmd>ToggleTerm<cr>")
+
+map("n", "<C-o>", "<cmd>Outline<cr>")
+
 -- gcc for comments
+-- <>sr for search and replace
+-- <>| splitv
+-- <>_ spltih
+-- <>q session stuff, restore good oomp oomp
+-- <C-n> next result blink cmp
+-- <C-p> prev result blink cmp

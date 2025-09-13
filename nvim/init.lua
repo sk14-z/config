@@ -2,7 +2,6 @@ vim.g.maplocalleader = " "
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
 
-vim.g.mkdp_browser = "firefox"
 vim.g.wiki_root = "~/wiki"
 
 vim.cmd("set nornu")

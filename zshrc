@@ -2,9 +2,18 @@ export ZSH="$HOME/.oh-my-zsh"
 export LANG=en_US.UTF-8
 export VISUAL=nvim
 export EDITOR=nvim
+export GDK_SCALE=2
+export GDK_DPI_SCALE=0.5
 
-source /usr/lib/spaceship-prompt/spaceship.zsh
 source $ZSH/oh-my-zsh.sh
+
+autoload -U promptinit; promptinit
+prompt typewritten
+TYPEWRITTEN_PROMPT_LAYOUT="pure"
+TYPEWRITTEN_SYMBOL="->"
+TYPEWRITTEN_RELATIVE_PATH="git"
+export TYPEWRITTEN_LEFT_PROMPT_PREFIX_FUNCTION=(date +%H:%M)
+
 
 CASE_SENSITIVE="false"
 plugins=(git colored-man-pages)

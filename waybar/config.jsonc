@@ -7,8 +7,13 @@
   "gtk-layer-shell": true,
   "passthrough": false,
   "fixed-center": true,
-  "modules-left": ["hyprland/workspaces", "hyprland/window"],
-  "modules-center": ["custom/media"],
+  "modules-left": [
+    "hyprland/workspaces",
+    "hyprland/window"
+  ],
+  "modules-center": [
+    "custom/media"
+  ],
   "modules-right": [
     "pulseaudio",
     "backlight",
@@ -32,11 +37,14 @@
   "battery": {
     "format": "   {capacity}%",
     "format-charging": "  {capacity}%",
-  }, 
+  },
   "backlight": {
     "device": "intel_backlight",
     "format": "{icon}  {percent}%",
-    "format-icons": ["", ""]
+    "format-icons": [
+      "",
+      ""
+    ]
   },
   "clock#simpleclock": {
     "tooltip": false,
@@ -55,18 +63,18 @@
     "tooltip": false,
   },
   "custom/media": {
-        "format": "{icon} {}",
-        "return-type": "json",
-        "max-length": 40,
-        "format-icons": {
-            "spotify": "  ",
-        },
-        "escape": true,
-        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    "format": "{icon} {}",
+    "return-type": "json",
+    "max-length": 40,
+    "format-icons": {
+      "spotify": "  ",
     },
-    "custom/power": {
-        "format" : "⏻ ",
-	"on-click" : "loginctl kill-session $XDG_SESSION_ID"
-    }
+    "escape": true,
+    "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
+    // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+  },
+  "custom/power": {
+    "format": "⏻ ",
+    "on-click": "loginctl kill-session $XDG_SESSION_ID"
+  }
 }

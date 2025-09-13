@@ -2,7 +2,7 @@
 
 ## Showcase
 
-[Video](https://github.com/sk14-z/config/raw/main/showcase.mov)
+![](showcase.gif)
 
 ## Programs
 
@@ -14,13 +14,15 @@
 - notification center: swaync
 
 - font: Fira Code Nerd
-- terminal: kitty
+- terminal: kitty (atom)
 - files: yazi
 - browser: firefox [config](https://github.com/Naezr/ShyFox)
-- text: neovim
-- image: nsxiv
-- video: mpv
+- text: neovim (oxocarbon)
+- image: oculante
+- video: clapper
 - resource monitor: bottom
 - fetcher: fast fetch
 - screen shot: grim + slurp
 - screen capture: wf-recorder
+- gtk: Colloid-Grey-Dark-Dracula
+- qt: KvMojave

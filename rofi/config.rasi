@@ -10,7 +10,7 @@
 
 configuration {
 	/*---------- General setting ----------*/
-	modi: "drun,run,window";
+	modi: "drun";
 	case-sensitive: false;
 	cycle: true;
 	filter: "";
